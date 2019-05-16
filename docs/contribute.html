@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>Contributing To Status | Nimbus</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev-people-ops.status.im/docs/contribute.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://dev-people-ops.status.im/docs/contribute.html">
+    
+  
+  <!-- Icon -->
+  <meta name="msapplication-TileColor" content="#ff9c00">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+
+  <link rel="icon" type="image/png" href="/img/logo-16.png?v=0.0.5" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png?v=0.0.5" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Nimbus">
+  <meta property="og:image" content="/img/graphic-licensing.png">
+  <meta property="og:title" content="Nimbus, a Light Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <div class="logo-wrap">
+            <span class="logo-span"><a class="logo" href="/"></a></span>
+            <span class="logo-span"><a class="logo-text" href="/">people-ops</a></span>
+        </div>
+        <header class="dropdown">
+            <nav>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#" class="main-link">Status App</a>
+                        <i class="mobile-submenu-trigger"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="https://status.im">About</a></li>
+                                <li><a href="https://status.im">Features</a></li>
+                                <li><a href="https://desktop.status.im">Desktop</a></li>
+                                <li><a href="https://docs.status.im">Docs</a></li>
+                                <li><a href="https://our.status.im">Blog</a></li>
+                                <li><a href="https://people-ops.status.im/">Contribute</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="main-link">Embark</a>
+                        <i class="mobile-submenu-trigger"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="https://embark.status.im">About</a></li>
+                                <li><a href="https://embark.status.im/docs">Docs</a></li>
+                                <li><a href="https://our.status.im/tag/embark">Blog</a></li>
+                                <li><a href="https://gitter.im/embark-framework/Lobby">Contribute</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Studio</a></li>
+                    <li class="has-submenu"><a href="https://status.im/incubate">Incubate</a></li>
+                        <i class="mobile-submenu-trigger"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="https://get.status.im/chat/public/status-incubate">Community</a></li>
+                                <li><a href="https://our.status.im/tag/incubate">Blog</a></li>
+                            </ul>
+                        </div>
+                    <li class="has-submenu">
+                        <a href="https://nimbus.status.im" class="main-link">Nimbus</a>
+                        <i class="mobile-submenu-trigger"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="/docs/">Docs</a></li>
+                                <li><a href="https://our.status.im/tag/research">Blog</a></li>
+                                <li><a href="https://gitter.im/status-im/nimbus">Contribute</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="https://our.status.im/tag/hardwallet">Hardwallet</a></li>
+                    <li class="current has-submenu">
+                        <a href="https://people-ops.status.im">Peopleops</a>
+                        <i class="mobile-submenu-trigger"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="https://our.status.im/our-principles/">Our Principles</a></li>
+                                <li><a href="/people-op.status.im/docs/working_here.html">Working Here</a></li>
+                                <li><a href="/people-op.status.im/docs/">Docs</a></li>
+                                <li><a href="/people-op.status.im/docs/life_status.html">Life at Status</a></li>
+                                <li><a href="/people-op.status.im/docs/contribute.html">Contribute</a></li>
+                                <li><a href="https://status.im/open-positions.html">Jobs</a></li>
+                                <li><a href="https://people-ops.status.im/tag/peopleops">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="secondary-nav">
+        <div id="search-input-wrap">
+            <div id="search-input-icon">
+                <i class="fa fa-search"></i>
+            </div>
+            <input type="search" id="search-input" placeholder="Search...">
+        </div>
+        <span><a href="http://get.status.im/chat/public/status" class="button button--secondary">Status Public Chat</a></span>
+        <span class="social-link social-link--twitter"><a href="https://twitter.com/ethstatus" target="_blank"></a></span>
+        <span class="social-link social-link--github"><a href="https://github.com/status-im" target="_blank"></a></span>
+    </div>
+    <a href="#" class="mobile-menu-trigger">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 7C4 6.44727 4.44775 6 5 6H19C19.5522 6 20 6.44727 20 7C20 7.28516 19.8811 7.54102 19.6903 7.72266C19.5109 7.89453 19.2677 8 19 8H5C4.44775 8 4 7.55273 4 7ZM4 17C4 16.4473 4.44775 16 5 16H19C19.1147 16 19.2251 16.0195 19.3278 16.0547C19.463 16.1016 19.5851 16.1777 19.687 16.2734C19.8798 16.4551 20 16.7129 20 17C20 17.5527 19.5522 18 19 18H5C4.44775 18 4 17.5527 4 17ZM5 11C4.44775 11 4 11.4473 4 12C4 12.5527 4.44775 13 5 13H15C15.3312 13 15.6249 12.8398 15.8068 12.5918C15.9282 12.4258 16 12.2207 16 12C16 11.6387 15.8087 11.3223 15.5221 11.1465C15.3701 11.0527 15.1913 11 15 11H5Z" fill="black"/>
+        </svg>
+    </a>
+</div>
+    
+    <div class="page-intro wrapper">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">Contributing To Status</h1>
+    <a href="https://github.com/status-im/people-ops.status.im/edit/develop/source/docs/contribute.md" class="article-edit-link" title="Improve this doc">Edit on Github</a>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Incubate</strong><a href="index.html" class="sidebar-link">What Is Status Incubate?</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2019-05-16T09:03:24.614Z" itemprop="dateModified">Last updated: 2019-05-16</time>
+                <a href="index.html" class="article-footer-next" title="What Is Status Incubate?"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="info">
+            <div class="blog-logo">
+                <a href="https://status.im/"><img src="../img/logo-footer.svg" alt="Status"><span>status</span></a>
+            </div>
+            <p>Status Holdings Pte. Ltd. <br>6 Ubi Road Singapore </p>
+        </div>
+        <div class="social-links">
+            <h3>Social links</h3>
+            <ul class="community">
+                <li><a href="https://www.facebook.com/ethstatus" target="_blank" class="footer-facebook">Facebook</a></li>
+                <li><a href="https://twitter.com/ethstatus" target="_blank" class="footer-twitter">Twitter</a></li>
+                <li><a href="https://chat.status.im/#/register" target="_blank" class="footer-riot">Riot</a></li>
+                <li><a href="https://github.com/status-im" target="_blank" class="footer-github">GitHub</a></li>
+                <li><a href="https://www.reddit.com/r/statusim/" target="_blank" class="footer-reddit">Reddit</a></li>
+                <li><a href="https://www.youtube.com/statusim" target="_blank" class="footer-youtube">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="more">
+            <h3>More</h3>
+            <ul>
+                <li><a href="http://docs.status.im/">Status Docs</a></li>
+                <li><a href="https://our.status.im/">Our Status</a></li>
+                <li><a href="https://status.im/open-positions.html">Jobs</a></li>
+                <li><a href="https://status.im/incubate">Incubate</a></li>
+                <li><a href="https://status.im/projects">Projects</a></li>
+                <li><a href="https://status.im/privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+    </div>
+    </div>
+</footer>
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <div class="backdrop"></div>
+<div class="mobile-menu-container">
+  <div class="mobile-menu-container-inner">
+    <div class="mobile-menu-header">
+      <div class="logo-wrap">
+          <span class="logo-span"><a class="logo" href="/"></a></span>
+          <span class="logo-span"><a class="logo-text" href="/">people-ops</a></span>
+      </div>
+      <a href="#" class="close">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.574L7.72275 6.2968C7.32616 5.90021 6.68994 5.90241 6.29617 6.29617C5.89966 6.69269 5.90269 7.32864 6.2968 7.72275L10.574 12L6.2968 16.2772C5.90021 16.6738 5.90241 17.3101 6.29617 17.7038C6.69269 18.1003 7.32864 18.0973 7.72275 17.7032L12 13.426L16.2772 17.7032C16.6738 18.0998 17.3101 18.0976 17.7038 17.7038C18.1003 17.3073 18.0973 16.6714 17.7032 16.2772L13.426 12L17.7032 7.72275C18.0998 7.32616 18.0976 6.68994 17.7038 6.29617C17.3073 5.89966 16.6714 5.90269 16.2772 6.2968L12 10.574Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+    <div class="ecosystem">
+      <span class="title">Ecosystem</span>
+    </div>
+    <div class="community">
+      <span class="title">Community</span>
+    </div>
+  </div>
+  <div class="mobile-submenu-container-inner">
+    <div class="mobile-menu-header">
+      <a href="#" class="back">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00687 12.1016C7.02704 12.3261 7.1228 12.5448 7.29281 12.7143L14.3042 19.7079C14.6926 20.0953 15.3188 20.0988 15.7089 19.7097C16.0963 19.3232 16.0907 18.6911 15.7072 18.3085L9.38119 11.9986L15.7072 5.68865C16.0956 5.30126 16.099 4.67664 15.7089 4.28751C15.3215 3.90107 14.6877 3.9067 14.3042 4.28924L7.29281 11.2828C7.06819 11.5069 6.97231 11.8103 7.00687 12.1016Z" fill="black"/>
+        </svg>
+      </a>
+      <span class="title">Status app</span>
+      <a href="#" class="close">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.574L7.72275 6.2968C7.32616 5.90021 6.68994 5.90241 6.29617 6.29617C5.89966 6.69269 5.90269 7.32864 6.2968 7.72275L10.574 12L6.2968 16.2772C5.90021 16.6738 5.90241 17.3101 6.29617 17.7038C6.69269 18.1003 7.32864 18.0973 7.72275 17.7032L12 13.426L16.2772 17.7032C16.6738 18.0998 17.3101 18.0976 17.7038 17.7038C18.1003 17.3073 18.0973 16.6714 17.7032 16.2772L13.426 12L17.7032 7.72275C18.0998 7.32616 18.0976 6.68994 17.7038 6.29617C17.3073 5.89966 16.6714 5.90269 16.2772 6.2968L12 10.574Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+    <div class="dropdown">
+      <nav></nav>
+    </div>
+  </div>
+</div>
+  <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/bundle.js?v=0.0.1"></script>
+<!-- build:js build/js/main.js -->
+<script src="/js/lang_select.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/fetch_blog_posts.js"></script>
+<!-- endbuild -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script async src="/js/highlight.pack.js"></script>
+<script async src="/js/solidity.js"></script>
+<script>
+
+function highlight() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+}
+
+$(document).ready(function() {
+  try {
+    highlight();
+  } catch(err) {
+    console.log("retrying...")
+    setTimeout(function() {
+      highlight();
+    }, 2500)
+  }
+
+  var clipboard = new ClipboardJS(".btn");
+  clipboard.on('success', function(e) {
+    var id = $(e.trigger).attr("data-clipboard-target");
+    $(id).toggleClass("flash");
+    setTimeout(function() {
+      $(id).toggleClass("flash");
+    }, 200);
+    e.clearSelection();
+  })
+});
+
+</script>
+<style>
+  mark {
+    background: #232323;
+    color: white;
+    font-weight: bold;
+
+    -webkit-transition: background 0.1s ease-in-out;
+    -ms-transition:     background 0.1s ease-in-out;
+    transition:         background 0.1s ease-in-out;
+  }
+
+  .clippy {
+    margin-top: -3px;
+    position: relative;
+    top: 3px;
+  }
+
+  pre {
+    position: relative;
+  }
+
+  .btn {
+    transition: opacity .3s ease-in-out;
+    padding: 2px 6px;
+    position: absolute;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    user-select: none;
+    -webkit-appearance: none;
+    top: 34px;
+    right: 12px;
+  }
+
+  .flash {
+    background-color: grey;
+  }
+
+</style>
+<!-- Algolia -->
+
+
+</body>
+</html>
